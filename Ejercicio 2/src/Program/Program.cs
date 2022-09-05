@@ -11,16 +11,16 @@ namespace Program
         {
 
             Doctor doctor1 = new Doctor("Armand");
-            Patient paciente1 = new Patient("Steven Jhonson");
+            Patient paciente1 = new Patient("Steven Jhonson", "986782342", "5555-555-555");
 
-            AppointmentService appointment1 = new AppointmentService(paciente1, "986782342", "5555-555-555", DateTime.Now, "Wall Street", doctor1);
+            AppointmentService appointment1 = new AppointmentService(paciente1, DateTime.Now, "Wall Street", doctor1);
 
 
 
             Doctor doctor2 = new Doctor("");
-            Patient paciente2 = new Patient("Ralf Manson");
+            Patient paciente2 = new Patient("Ralf Manson", "", "5555-555-555");
 
-            AppointmentService appointment2 = new AppointmentService(paciente2, "", "5555-555-555", DateTime.Now, "Queen Street", doctor2);
+            AppointmentService appointment2 = new AppointmentService(paciente2,  DateTime.Now, "Queen Street", doctor2);
 
 
 
